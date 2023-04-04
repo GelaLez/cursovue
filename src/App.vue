@@ -7,6 +7,10 @@
 <template>
     <h1>Listado de posts:</h1>              
    <CounterComposition/>
+   <CounterComposition/>
+   <CounterComposition/>
+   <CounterComposition/>
+   <CounterComposition/>
 </template>
 
 

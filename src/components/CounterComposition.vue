@@ -6,21 +6,12 @@
 </template>
 
 
-<script  lang="ts">
+<script  lang="ts" setup>
 
-import { defineComponent, Ref, ref } from 'vue';
+import { Ref, ref } from 'vue';
+let counter: Ref = ref(0)
+const addCounter = (): void => {
+    counter.value++
+}
 
-export default defineComponent({
-    name: 'CounterComposition',
-    setup() {
-        let counter: Ref = ref(0)
-        const addCounter = ():void => {
-            // counter++
-            counter.value++
-            console.log(counter);
-        }
-        return { counter, addCounter }
-    }
-
-})
 </script>
