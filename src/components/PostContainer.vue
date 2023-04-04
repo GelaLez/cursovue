@@ -11,9 +11,6 @@
     </div>
 </template>
 
-
-
-
 <style>
 .post-container {
     width: 100;
