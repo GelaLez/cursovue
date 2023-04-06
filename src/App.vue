@@ -8,11 +8,12 @@ import ClassBind from './components/ClassBind.vue';
 import ModelForm from './components/ModelForm.vue';
 import Teacher from './components/TeacherGela.vue';
 import TeacherForm from './components/TeacherForm.vue'
+import CycleCompositionApi from './components/CycleCompositionApi.vue';
 
 </script>
 
 <template>
-    <TeacherForm />
+    <CycleCompositionApi />
 </template>
 
 <style>
