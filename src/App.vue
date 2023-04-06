@@ -6,10 +6,13 @@ import ExampleSelective from './components/ExampleSelective.vue';
 import ExampleFor from './components/ExampleFor.vue';
 import ClassBind from './components/ClassBind.vue';
 import ModelForm from './components/ModelForm.vue';
+import Teacher from './components/TeacherGela.vue';
+import TeacherForm from './components/TeacherForm.vue'
+
 </script>
 
 <template>
-    <ModelForm />
+    <TeacherForm />
 </template>
 
 <style>
