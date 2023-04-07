@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <PostDetail v-for="elm in info" :key="elm.title" :title="elm.title" :content="elm.content" />
+        <PostDetail v-for="elm in info" :key="elm.title" :title="elm.title" :content="elm.content" @sayHi="showAlert" />
     </div>
 </template>
 
@@ -20,6 +20,10 @@ let info: Array<IPost> = [
     { title: "este es el post 5", content: 'tessssssssto ejemplo5' },
 ]
 
+
+  function showAlert(msg:string) {
+    alert(msg)
+  }
 
 </script>
 

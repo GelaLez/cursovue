@@ -2,12 +2,14 @@
     <div class="post">
         <h3>{{ title }}</h3>
         <p> {{ content }} </p>
+        <input type="text" v-model="message">
+        <button @click="handdleClick">di hola</button>
     </div>
 </template>
 
 <script lang="ts">
 // optener informacion de la manera optionApi
-import { defineComponent } from 'vue';
+import { defineComponent, Ref, ref } from 'vue';
 
 export default defineComponent({
     name: 'PostDetail',
@@ -22,8 +24,13 @@ export default defineComponent({
             default: 'Este post no tiene contenido'
         }
     },
-    setup(props) {        
-       return props
+    emits: ["sayHi"],
+    setup(props, { emit }) {
+        const handdleClick = () => {
+            emit("sayHi", message.value)
+        }
+        let message: Ref<string> = ref("")
+        return { props, message, handdleClick }
     }
 })
 
