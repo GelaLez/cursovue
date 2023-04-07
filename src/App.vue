@@ -8,12 +8,12 @@ import ClassBind from './components/ClassBind.vue';
 import ModelForm from './components/ModelForm.vue';
 import Teacher from './components/TeacherGela.vue';
 import TeacherForm from './components/TeacherForm.vue'
-import CycleCompositionApi from './components/CycleCompositionApi.vue';
+import PostListComunicacionVertical from './components/PostListComunicacionVertical.vue';
 
 </script>
 
 <template>
-    <CycleCompositionApi />
+    <PostListComunicacionVertical />
 </template>
 
 <style>
