@@ -7,8 +7,9 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 // optener informacion de la manera optionApi
+/*
 import { defineComponent, Ref, ref } from 'vue';
 
 export default defineComponent({
@@ -33,6 +34,19 @@ export default defineComponent({
         return { props, message, handdleClick }
     }
 })
+*/
+
+import { defineProps, defineEmits, Ref, ref } from 'vue'
+
+const props = defineProps({ title: String, content: String })
+
+const emit = defineEmits(['sayHi'])
+
+const handdleClick = () => {
+    emit('sayHi', message.value)
+}
+
+let message: Ref<String> = ref("")
 
 </script>
 
@@ -46,3 +60,5 @@ export default defineComponent({
     padding: 10px;
 }
 </style>
+
+//https://www.youtube.com/watch?v=4mNKZD3Kr6k&list=PLDllzmccetSNgykILXnHMeuO-y-gRcF-i&index=6&ab_channel=GOGODEV
