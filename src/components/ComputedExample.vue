@@ -25,9 +25,9 @@ const reverse = computed(() => message.value.split('').reverse().join(''))
 
 <template>
     <div>
-        <label v-custom-size="40" >Subtotal</label>
+        <label v-custom-size:sm>Subtotal</label>
         <input type="number" v-model="subtotal">
-        <h3 v-custom-size="100">Valor total a pagar : {{totalVat}} ( {{vat}} % ) </h3>
+        <h3 v-custom-size:xxl>Total inpuestos a pagar : {{ totalVat }} ( {{ vat }} % ) </h3>
     </div>
 </template>
  
