@@ -5,6 +5,7 @@
 </template>
 
 <script lang="ts" setup>
+
 import PostDetail from '../components/PostDetailsComunicacionVertical.vue'
 
 interface IPost {
@@ -21,9 +22,9 @@ let info: Array<IPost> = [
 ]
 
 
-  function showAlert(msg:string) {
+function showAlert(msg: string) {
     alert(msg)
-  }
+}
 
 </script>
 

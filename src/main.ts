@@ -1,6 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import './assets/main.css'
+// import './assets/main.css'
+// directivas personalizadas
+const app = createApp(App)
+app.directive('font-size', {
+    beforeMount: (el, binding) => {
+        el.style.fontSize = '70px'
+    }
+})
+app.directive('custom-size', {
+    beforeMount: (el, binding) => {
+        el.style.fontSize = binding.value = 'px'
+    }
+})
 
-createApp(App).mount('#app')
+app.mount('#app')
