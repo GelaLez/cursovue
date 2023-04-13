@@ -10,11 +10,12 @@ import Teacher from './components/TeacherGela.vue';
 import TeacherForm from './components/TeacherForm.vue'
 import PostListComunicacionVertical from './components/PostListComunicacionVertical.vue';
 import ComputedExample from './components/ComputedExample.vue';
+import PostListService from './components/PostList.vue'
 
 </script>
 
 <template>
-    <ComputedExample />
+    <PostListService />
 </template>
 
 <style>
