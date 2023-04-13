@@ -6,8 +6,10 @@
     </ul>
 </template>
 
+<!-- // option api
+
 <script lang="ts">
-import {PostService as PostService} from '@/services/PostService'
+import { PostService as PostService } from '@/services/PostService'
 import { defineComponent, onMounted } from 'vue';
 
 export default defineComponent({
@@ -23,5 +25,23 @@ export default defineComponent({
     }
 })
 </script>
+ -->
+
+
+ <!-- compositionApi -->
+
+
+<script lang="ts" setup>
+import { PostService as PostService } from '@/services/PostService'
+import { defineComponent, onMounted } from 'vue';
+const service = new PostService()
+const posts = service.getPosts()
+onMounted(async () => {
+    await service.fetchAll();
+})
+
+</script>
+
+
 
 <style scoped></style>
