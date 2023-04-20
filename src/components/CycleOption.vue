@@ -1,7 +1,7 @@
 // opcionAPI y uso de los diferentes ciclos de vida 
 <template>
     <div>
-        Hola mundo
+        Hola mundo2
     </div>
 </template>
 

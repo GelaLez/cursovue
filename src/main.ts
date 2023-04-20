@@ -1,9 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import "bootstrap/dist/css/bootstrap.min.css"
+import router from './router'
+
 
 // import './assets/main.css'
 // directivas personalizadas
 const app = createApp(App)
+app.use(router)
+
 app.directive('font-size', {
     beforeMount: (el, binding) => {
         el.style.fontSize = '70px'
@@ -48,7 +53,7 @@ app.directive('custom-font', {
         }
 
         el.style.fontSize = size + 'px'
-        
+
         if (binding.modifiers.red) {
             el.style.color = '#ff0000'
         } else if (binding.modifiers.green) {

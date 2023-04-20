@@ -11,11 +11,11 @@ import TeacherForm from './components/TeacherForm.vue'
 import PostListComunicacionVertical from './components/PostListComunicacionVertical.vue';
 import ComputedExample from './components/ComputedExample.vue';
 import PostListService from './components/PostList.vue'
-
+import NavBar from './views/NavBar.vue';
 </script>
 
 <template>
-    <PostListService />
+    <NavBar />
 </template>
 
 <style>
