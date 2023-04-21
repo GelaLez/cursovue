@@ -25,3 +25,29 @@ export class PostService {
     }
 
 }
+
+
+export class TareaService {
+
+    private tareas: Ref<Array<ITarea>>
+
+    constructor() {
+        this.tareas = ref<Array<ITarea>>([])
+    }
+
+
+    getTareas(): Ref<Array<ITarea>> {
+        return this.tareas
+    }
+
+    async fetchTareas(): Promise<void> {
+        try {
+            const url = 'http://localhost:3030/v1/homeworks/'
+            const response = await fetch(url)
+            const json = await response.json()
+            this.tareas.value = await json
+        } catch (error) {
+
+        }
+    }
+}

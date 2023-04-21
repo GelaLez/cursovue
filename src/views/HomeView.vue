@@ -1,11 +1,9 @@
 <template>
-       INICIO
-       <PostList/>
+    <PostList />
 </template>
 
 <script lang="ts" setup>
-    import PostList from '@/components/PostList.vue';
+import PostList from '@/components/PostList.vue';
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

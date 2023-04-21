@@ -12,6 +12,7 @@ let PostId = ref('')
 onMounted(() => {
     const route = useRoute()
     PostId.value = route.params.id
+    console.log(route.params.id)
 })
 
 </script>
